@@ -38,7 +38,7 @@ button{
     border-radius: 30px;
     font-size: larger;
     font-weight: bold;
-    transition: all 0.3s;
+    transition: all 1s ease;
 }
 .no{
     transition: none;
