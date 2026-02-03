@@ -3,9 +3,20 @@ const defense = Array.from(
 );
 const noBtn = document.querySelector(".no");
 const please = document.getElementById("please");
+const yesBtn = document.querySelector(".yes");
+const msg = document.getElementById("msg");
+const hide = document.querySelectorAll(".yes, .no");
+const show = document.querySelector(".gif");
 
 let intervalId = null;
 let x = 0, y = 0;
+let intervalId2 = null;
+
+let isPink = false;
+intervalId2 = setInterval(() =>{
+    isPink = !isPink;
+    yesBtn.style.backgroundColor = isPink? "#feadd2" : ""
+}, 800);
 
 const x_step = 50;
 const y_step = 50;
@@ -49,11 +60,6 @@ defense.forEach(d => {
         intervalId = null;
     });
 });
-
-const yesBtn = document.querySelector(".yes");
-const msg = document.getElementById("msg");
-const hide = document.querySelectorAll(".yes, .no");
-const show = document.querySelector(".gif");
 
 yesBtn.addEventListener("click", () => {
     msg.textContent = "YAYYYYYYYYY!!!!!😉";
