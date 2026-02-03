@@ -7,8 +7,8 @@ const please = document.getElementById("please");
 let intervalId = null;
 let x = 0, y = 0;
 
-const x_step = 70;
-const y_step = 70;
+const x_step = 50;
+const y_step = 50;
 const interval = 10;
 let cnt = 0;
 
