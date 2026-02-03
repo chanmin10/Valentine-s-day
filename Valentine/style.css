@@ -1,0 +1,135 @@
+div{
+    box-sizing: border-box;
+}
+body{
+    background-color: #e7bffd;
+}
+.container{
+    background-color: white;
+    width: 800px;
+    min-width: 800px;
+    min-height: 450px;
+    border-radius: 20px;
+    margin-top: 40px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.container img{
+    width: 400px;
+    align-items: center;
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.paragraph{
+    text-align: center;
+    padding-top: 180px;
+    font-size: larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.paragraph:hover{
+    cursor: default;
+}
+button{
+    border: none;
+    width: 150px;
+    height: 70px;
+    border-radius: 30px;
+    font-size: larger;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.no{
+    transition: none;
+    position: absolute;
+    right: 130px;
+    bottom: 83px;
+}
+.no:hover{
+    cursor:default;
+}
+.yes{
+    margin-top: 20px;
+    margin-left: 120px;
+}
+.yes:hover{
+    background-color: #feadd2;
+}
+.defense{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+}
+.d1{
+    top: -50px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.d2{
+    top: -50px;
+    left: -60px;
+}
+.d3{
+    left: -60px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.d4{
+    left: -60px;
+    bottom: -50px;
+}
+.d5{
+    bottom: -50px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.d6{
+    right: -60px;
+    bottom: -50px;
+    left: auto;
+}
+.d7{
+    right: -60px;
+    transform: translateY(-50%);
+    z-index: 1;
+    left: auto;
+}
+.d8{
+    right: -60px;
+    top: -50px;
+    left: auto;
+}
+.d9{
+    transform: translate(-50%, -50%);
+}
+
+.gif{
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+    display: none;
+}
+.block{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+}
+
+#please{
+    width: 1000px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: 3;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
